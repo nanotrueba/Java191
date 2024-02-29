@@ -1,0 +1,17 @@
+```
+//subclass of Person -> Student
+public class Student extends Person {
+    //declaration
+    private int idNum;
+
+    //setter method
+    public void setID(int studentId) {
+        idNum = studentId;
+    }
+
+    //getter method
+    public int getID() {
+        return idNum;
+    }
+}
+```
