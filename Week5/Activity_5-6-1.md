@@ -21,7 +21,6 @@ public class StudentDerivationFromPerson {
     }
 }
 
-//Expected output: Name: Smith, Age: 20, ID: 9999oading StudentDerivationFromPerson.java…]()
+//Expected output: Name: Smith, Age: 20, ID: 9999
 
-```
-
+``` 
