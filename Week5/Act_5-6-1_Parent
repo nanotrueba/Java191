@@ -8,7 +8,7 @@ public class Person {
     //setter method
     public void setName(String userName) {
         lastName  = userName;
-    }
+    } 
     //setter method
     public void setAge(int numYears) {
         ageYears = numYears;
