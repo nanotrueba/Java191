@@ -4,7 +4,7 @@ public class Person {
     //declaration of vars
     private int ageYears;
     private String lastName;
-
+ 
     //setter method
     public void setName(String userName) {
         lastName  = userName;
