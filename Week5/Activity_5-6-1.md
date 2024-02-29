@@ -4,7 +4,7 @@ public class StudentDerivationFromPerson {
 
         //create new object  of class 'student'
         Student courseStudent = new Student();
-
+ 
         /* Your solution goes here  */
         //pass expected output values into object as parameters to update its value
         courseStudent.setName("Smith");
