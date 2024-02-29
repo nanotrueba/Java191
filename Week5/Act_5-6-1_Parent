@@ -14,7 +14,7 @@ public class Person {
         ageYears = numYears;
     }
      
-    // Other parts omitted
+    //Other parts omitted
 
     //void print method
     public void printAll() {
