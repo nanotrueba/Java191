@@ -1,0 +1,17 @@
+```
+public class course {
+    private String courseTitle;
+    private String courseNumber;
+
+    public void setCourseTitle(String title) {
+        courseTitle = title;
+    }
+    public void setCourseNumber(String number) {
+        courseNumber = number;
+    }
+
+    public void printinfo() {
+        System.out.print ("Course Information: \n" + "  Course Title: " +  courseTitle + "\n  Course Number: " + courseNumber);
+    }
+}
+```
