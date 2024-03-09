@@ -15,7 +15,7 @@ public class offeredCourse extends course{
     }
 
     public void getInfo() {
-        System.out.println ("\n \nCourse Information: \n" + "   Instructor Name: " + instructorName + "\n   Location: " + courseLocation + "\n   Class Time: " + courseTime);
+        System.out.println ("   Instructor Name: " + instructorName + "\n   Location: " + courseLocation + "\n   Class Time: " + courseTime);
     }
 }
 ```
