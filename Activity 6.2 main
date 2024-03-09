@@ -19,6 +19,7 @@ public class mainName {
 
         //Print course values
         course1.printinfo();
+        course2.printinfo();
         course2.getInfo();
     }
 }
