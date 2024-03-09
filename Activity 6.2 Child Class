@@ -1,0 +1,21 @@
+```
+public class offeredCourse extends course{
+    private String instructorName;
+    private String courseLocation;
+    private String courseTime;
+
+    public void setInstructorName(String name) {
+        instructorName = name;
+    }
+    public void setCourseLocation(String location) {
+        courseLocation = location;
+    }
+    public void setCourseTime(String time) {
+        courseTime = time;
+    }
+
+    public void getInfo() {
+        System.out.println ("\n \nCourse Information: \n" + "   Instructor Name: " + instructorName + "\n   Location: " + courseLocation + "\n   Class Time: " + courseTime);
+    }
+}
+```
