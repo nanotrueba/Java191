@@ -11,7 +11,7 @@ public class course {
     }
 
     public void printinfo() {
-        System.out.print ("Course Information: \n" + "  Course Title: " +  courseTitle + "\n  Course Number: " + courseNumber);
+        System.out.print ("Course Information: \n" + "  Course Title: " +  courseTitle + "\n  Course Number: " + courseNumber + "\n");
     }
 }
 ```
