@@ -1,0 +1,25 @@
+```
+public class mainName {
+    public static void main(String[] args) {
+
+        //Create objects
+        course course1 = new course();
+        offeredCourse course2 = new offeredCourse();
+
+        //Update values of course 1
+        course1.setCourseNumber("ECE287");
+        course1.setCourseTitle("Digital Systems Design");
+
+        //Update values of course 2
+        course2.setCourseNumber("ECE387");
+        course2.setCourseTitle("Embedded Systems Design");
+        course2.setInstructorName("Mark Patterson");
+        course2.setCourseLocation("Wilson Hall 231");
+        course2.setCourseTime("WF: 2-3:30 pm");
+
+        //Print course values
+        course1.printinfo();
+        course2.getInfo();
+    }
+}
+```
