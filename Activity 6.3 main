@@ -1,0 +1,26 @@
+```
+public class mainName {
+    public static void main(String[] args) {
+
+        Book book1 = new Book();
+        Encyclopedia book2 = new Encyclopedia();
+
+
+        book1.setBookTitle("The Hobbit");
+        book1.setAuthorName("J. R. R. Tolkien");
+        book1.setPublisherName("George Allen & Unwin");
+        book1.setPublicationDate("21 September 1937");
+        book1.printInfo();
+        System.out.println("\n");
+
+        book2.setBookTitle("The Illustrated Encyclopedia of the Universe");
+        book2.setAuthorName("Ian Ridpath");
+        book2.setPublisherName("Watson-Guptill");
+        book2.setPublicationDate("2001");
+        book2.setBookEdition("2nd");
+        book2.setNumOfPages(384);
+        book2.printInfo();
+
+    }
+}
+```
