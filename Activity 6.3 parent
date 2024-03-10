@@ -1,0 +1,26 @@
+```
+public class Book {
+    private String bookTitle;
+    private String authorName;
+    private String publisherName;
+    private String publicationDate;
+
+    public void setBookTitle(String title) {
+        bookTitle = title;
+    }
+    public void setAuthorName(String aName) {
+        authorName = aName;
+    }
+    public void setPublisherName(String pName) {
+        publisherName = pName;
+    }
+    public void setPublicationDate(String pDate) {
+        publicationDate = pDate;
+    }
+
+    public void printInfo() {
+        System.out.println("Book Information: \n" + bookTitle + "\nAuthor: " + authorName
+                + "\nPublisher: " + publisherName + "\nPublication Date: " + publicationDate );
+    }
+}
+```
