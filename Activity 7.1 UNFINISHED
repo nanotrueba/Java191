@@ -1,0 +1,40 @@
+```
+//import statements
+import java.util.Scanner;
+import java.util.InputMismatchException;
+public class ExceptionLab {
+
+    //stepsToMiles method
+    static void stepsToMiles(int steps) {
+        double result;
+        boolean needInput = true;
+
+        while (needInput) {
+
+            if (steps < 0) {
+                throw new ArithmeticException("Exception: Negative step count entered.");
+            } else {
+                result = (double) steps / 2000;
+                System.out.print("You walked ");
+                System.out.printf("%.2f", result);
+                System.out.print(" miles.");
+                needInput = false;
+            }
+        }
+    }
+
+    //main
+    public static void main(String[] args) {
+        int userSteps;
+
+        //Scan for user input
+        Scanner scnr = new Scanner(System.in);
+        System.out.println("Enter the number of steps walked: ");
+        userSteps = Integer.parseInt(scnr.nextLine());
+
+        //Run method with user input
+        stepsToMiles(userSteps);
+
+    }
+}
+```
