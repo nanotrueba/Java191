@@ -3,38 +3,28 @@
 import java.util.Scanner;
 import java.util.InputMismatchException;
 public class ExceptionLab {
-
     //stepsToMiles method
-    static void stepsToMiles(int steps) {
-        double result;
-        boolean needInput = true;
-
-        while (needInput) {
-
+    public static double stepsToMiles(int steps) throws Exception {
             if (steps < 0) {
-                throw new ArithmeticException("Exception: Negative step count entered.");
-            } else {
-                result = (double) steps / 2000;
-                System.out.print("You walked ");
-                System.out.printf("%.2f", result);
-                System.out.print(" miles.");
-                needInput = false;
-            }
-        }
+                throw new Exception("Exception: Negative step count entered.");
+            } return steps / 2000.0;
     }
 
     //main
     public static void main(String[] args) {
-        int userSteps;
-
         //Scan for user input
-        Scanner scnr = new Scanner(System.in);
-        System.out.println("Enter the number of steps walked: ");
-        userSteps = Integer.parseInt(scnr.nextLine());
-
-        //Run method with user input
-        stepsToMiles(userSteps);
-
+        try (Scanner scnr = new Scanner(System.in)) {
+            System.out.println("Enter the number of steps walked: ");
+            int steps = scnr.nextInt();
+            double miles = stepsToMiles(steps);
+            System.out.printf("Miles walked:  %.2f\n", miles);
+        //Catch non-integer input exceptions
+        } catch (InputMismatchException e) {
+            System.out.println("Invalid input. Please enter a number.");
+        //Catch new Exception for non-positive integers
+        } catch (Exception e) {
+            System.out.print(e.getMessage());
+        }
     }
 }
 ```
